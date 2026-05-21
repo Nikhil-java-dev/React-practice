@@ -1,0 +1,98 @@
+.mainContainer {
+  width: 100%;
+  background: white;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.leftTop {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.logoBox {
+  width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.location a {
+  color: blue;
+  text-decoration: none;
+}
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 2px solid #2b7cff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  gap: 10px;
+  min-width: 0;
+}
+
+.searchIcon {
+  font-size: 20px;
+  color: gray;
+  flex-shrink: 0;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.actionItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
