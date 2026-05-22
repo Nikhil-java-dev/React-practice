@@ -21,8 +21,13 @@ export default class LifeCycleInCBC extends Component {
   }
 
   componentWillUnmount() {
-    console.log("Component I Going To Unmount");
+    console.log("Component Will Going To Unmount");
     clearInterval(this.intervalId);
+  }
+
+  shouldComponentUpdate() {
+    console.log("Should Component Updated");
+    return true;
   }
 
   render() {

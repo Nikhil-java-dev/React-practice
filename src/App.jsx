@@ -5,8 +5,9 @@
 
 // import TodoWrapper from "./allTopics/10_todoApp/TodoWrapper";
 // import UncontrolledForms from "./allTopics/11_UncontrolledForms/UncontrolledForms";
-import { useState } from "react";
-import LifeCycleInCBC from "./allTopics/12_LifeCycle/LifeCycleInCBC";
+// import { useState } from "react";
+// import LifeCycleInCBC from "./allTopics/12_LifeCycle/LifeCycleInCBC";
+import LifeCycleInFBC from "./allTopics/12_LifeCycle/LifeCycleInFBC";
 
 // import Task from "./allTopics/Task_01/Task";
 
@@ -32,8 +33,8 @@ import LifeCycleInCBC from "./allTopics/12_LifeCycle/LifeCycleInCBC";
 // import ToggelComponent from "./allTopics/02_States/Toggel";
 
 const App = () => {
-  const [toggel, setToggel] = useState(false);
-  const handleToggel = () => setToggel((prev) => !prev);
+  // const [toggel, setToggel] = useState(false);
+  // const handleToggel = () => setToggel((prev) => !prev);
 
   return (
     <>
@@ -57,8 +58,9 @@ const App = () => {
       {/* <StatesInFBC /> */}
       {/* <Heart /> */}
       {/* <ToggelComponent /> */}
-      <button onClick={handleToggel}>Toggel Me</button>
-      {toggel && <LifeCycleInCBC />}
+      {/* <button onClick={handleToggel}>Toggel Me</button>
+      {toggel && <LifeCycleInCBC />} */}
+      <LifeCycleInFBC/>
     </>
   );
 };
