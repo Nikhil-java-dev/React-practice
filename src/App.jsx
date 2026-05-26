@@ -3,11 +3,17 @@
 // import Heart from "./allTopics/02_States/Heart";
 // import StatesInFBC from "./allTopics/02_States/StatesInFBC";
 
+import Reducer from "./allTopics/15_Reducer/Reducer";
+
 // import TodoWrapper from "./allTopics/10_todoApp/TodoWrapper";
 // import UncontrolledForms from "./allTopics/11_UncontrolledForms/UncontrolledForms";
 // import { useState } from "react";
 // import LifeCycleInCBC from "./allTopics/12_LifeCycle/LifeCycleInCBC";
-import LifeCycleInFBC from "./allTopics/12_LifeCycle/LifeCycleInFBC";
+// import LifeCycleInFBC from "./allTopics/12_LifeCycle/LifeCycleInFBC";
+// import { useState } from "react";
+// import Users from "./allTopics/12_LifeCycle/Users";
+// import Products from "./allTopics/13_Fetch/Products";
+// import ProductTask from "./allTopics/14_ProductTask/ProductTask";
 
 // import Task from "./allTopics/Task_01/Task";
 
@@ -59,8 +65,13 @@ const App = () => {
       {/* <Heart /> */}
       {/* <ToggelComponent /> */}
       {/* <button onClick={handleToggel}>Toggel Me</button>
-      {toggel && <LifeCycleInCBC />} */}
-      <LifeCycleInFBC/>
+      {toggel && <Users />} */}
+      {/* <button onClick={handleToggel}>Toggel Me</button>
+      {toggel && <Products />} */}
+      {/* <button onClick={handleToggel}>Toggel Me</button>
+      {toggel && <ProductTask />} */}
+      {/* <LifeCycleInFBC/> */}
+      <Reducer />
     </>
   );
 };
