@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./ProductTask.module.css";
 const ProductTask = () => {
-  const [items, setItems] = useState([]);
+  const [selecteProduct, setSelectProduct] = useState([]);
   const [selectedProducts, setSelectedProducts] = useState(null);
   useEffect(() => {
     const controller = new AbortController();
@@ -12,7 +12,7 @@ const ProductTask = () => {
         });
         let data = await resp.json();
         console.log(data);
-        setItems(data.products);
+        setSelectProduct(data.products);
       } catch (error) {
         console.log(error);
       }
@@ -21,8 +21,8 @@ const ProductTask = () => {
     return () => controller.abort();
   }, []);
 
-  const openPopUp = (product) => {
-    setSelectedProducts(product);
+  const openPopUp = (ele) => {
+    setSelectedProducts(ele);
   };
 
   const closePopUp = () => {
@@ -32,11 +32,11 @@ const ProductTask = () => {
   return (
     <div className={style.container}>
       <h1 className={style.heading}>All Products</h1>
-      {items.length === 0 ? (
+      {selecteProduct.length === 0 ? (
         <p className={style.empty}>No Product Find</p>
       ) : (
         <section className={style.grid}>
-          {items.map((ele) => {
+          {selecteProduct.map((ele) => {
             return (
               <div
                 key={ele.id}

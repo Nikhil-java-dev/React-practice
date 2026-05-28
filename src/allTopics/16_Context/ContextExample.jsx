@@ -1,0 +1,21 @@
+import { createContext } from "react";
+
+//! STEP 1: CREATE A CONTEXT
+export const MyContext = createContext(); //return context object
+
+//! STEP 2: PROVIDE A CONTEXT
+const ContextProvider = (props) => {
+    console.log(props);
+  let str = "Hi!! I'm Coming from Context";
+
+  return (
+    <>
+      <MyContext.Provider value={str}>
+        {props.children}
+
+      </MyContext.Provider>
+    </>
+  );
+};
+
+export default ContextProvider;
