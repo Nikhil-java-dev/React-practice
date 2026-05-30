@@ -5,19 +5,25 @@
 
 // import Reducer from "./allTopics/15_Reducer/Reducer";
 
-// import TodoWrapper from "./allTopics/10_todoApp/TodoWrapper";
+// import TodoWrapper from "./allTopics/10_TodoApp/TodoWrapper";
 // import UncontrolledForms from "./allTopics/11_UncontrolledForms/UncontrolledForms";
-import { useState } from "react";
+// import { useState } from "react";
 // import LifeCycleInCBC from "./allTopics/12_LifeCycle/LifeCycleInCBC";
 // import LifeCycleInFBC from "./allTopics/12_LifeCycle/LifeCycleInFBC";
 // import { useState } from "react";
 // import Users from "./allTopics/12_LifeCycle/Users";
 // import Products from "./allTopics/13_Fetch/Products";
-import ProductTask from "./allTopics/14_ProductTask/ProductTask";
-import Hero from "./allTopics/16_Context/Hero";
-import ContextProvider from "./allTopics/16_Context/ContextExample";
-import CounterProvider from "./allTopics/16_Context/CounterProvider";
-import Counter from "./allTopics/16_Context/Counter";
+// import ProductTask from "./allTopics/14_ProductTask/ProductTask";
+// import Hero from "./allTopics/16_Context/Hero";
+// import ContextProvider from "./allTopics/16_Context/ContextExample";
+// import CounterProvider from "./allTopics/16_Context/CounterProvider";
+// import Counter from "./allTopics/16_Context/Counter";
+// import { UserContextProvider } from "./allTopics/17_Task/Context/UserContextProvider";
+// import Task from "./allTopics/17_Task/Task";
+// import Routing1 from "./allTopics/18_Routing/Routing1";
+import Routing2 from "./allTopics/18_Routing/Routing2";
+// import Products from "./allTopics/19_CustomHooks/Products";
+// import Routing1 from "./allTopics/18_Routing/Routing1";
 
 // import Task from "./allTopics/Task_01/Task";
 
@@ -43,8 +49,8 @@ import Counter from "./allTopics/16_Context/Counter";
 // import ToggelComponent from "./allTopics/02_States/Toggel";
 
 const App = () => {
-  const [toggel, setToggel] = useState(false);
-  const handleToggel = () => setToggel((prev) => !prev);
+  // const [toggel, setToggel] = useState(false);
+  // const handleToggel = () => setToggel((prev) => !prev);
 
   return (
     <>
@@ -79,9 +85,17 @@ const App = () => {
       {/* <ContextProvider>
         <Hero />
       </ContextProvider> */}
-      <CounterProvider>
+      {/* <CounterProvider>
         <Counter />
-      </CounterProvider>
+      </CounterProvider> */}
+
+      {/* <UserContextProvider>
+        <Task />
+      </UserContextProvider> */}
+
+      {/* <Routing1 /> */}
+      <Routing2 />
+      {/* <Products /> */}
     </>
   );
 };
